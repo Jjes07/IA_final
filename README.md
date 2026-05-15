@@ -233,6 +233,15 @@ El AST hereda las limitaciones de AudioSet: las probabilidades son bajas en valo
 
 Como trabajo futuro, el fine-tuning del AST sobre IRMAS o sobre el dataset OpenMIC-2018 combinaría lo mejor de ambos enfoques: la capacidad representativa de los Transformers con datos especializados en instrumentos musicales.
 
+### Referencias
+
+- Moises.AI — separación de fuentes con IA: https://moises.ai
+- Gemmeke, J. et al. (2017). *Audio Set: An ontology and human-labeled dataset for audio events*. Google Research. https://research.google.com/audioset/
+- YAMNet — clasificación de audio con MobileNet: https://www.kaggle.com/models/google/yamnet
+- Essentia — librería de análisis musical (MTG-UPF): https://essentia.upf.edu
+- Bosch, J. J., Janer, J., Fuhrmann, F., & Herrera, P. IRMAS. https://www.upf.edu/web/mtg/irmas
+- Hugging Face. *AST: Audio Spectrogram Transformer*. https://huggingface.co/docs/transformers/model_doc/audio-spectrogram-transformer
+
 ---
 
 ## Instalación y uso
@@ -304,12 +313,3 @@ IA_final
 - SMOTE aplicado sobre el espacio de features (no sobre audio crudo) permitió mejorar el F1 macro de 53% a 62% compensando el desbalance natural del dataset.
 - La búsqueda de hiperparámetros con RandomizedSearchCV (50 iteraciones, cv=5) identificó que `max_features=0.4` con árboles más profundos (`max_depth=20`) supera a las configuraciones más conservadoras para este dominio.
 - Como trabajo futuro, el fine-tuning del AST sobre IRMAS o OpenMIC-2018 combinaría la capacidad representativa de los Transformers con datos especializados en instrumentos.
-
-### Referencias
-
-- Moises.AI — separación de fuentes con IA: https://moises.ai
-- Gemmeke, J. et al. (2017). *Audio Set: An ontology and human-labeled dataset for audio events*. Google Research. https://research.google.com/audioset/
-- YAMNet — clasificación de audio con MobileNet: https://www.kaggle.com/models/google/yamnet
-- Essentia — librería de análisis musical (MTG-UPF): https://essentia.upf.edu
-- Bosch, J. J., Janer, J., Fuhrmann, F., & Herrera, P. IRMAS. https://www.upf.edu/web/mtg/irmas
-- Hugging Face. *AST: Audio Spectrogram Transformer*. https://huggingface.co/docs/transformers/model_doc/audio-spectrogram-transformer
