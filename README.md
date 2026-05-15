@@ -241,6 +241,7 @@ Como trabajo futuro, el fine-tuning del AST sobre IRMAS o sobre el dataset OpenM
 
 - Python 3.10+
 - CUDA opcional (recomendado para inferencia más rápida con AST)
+- Git LFS (Si no lo tienes, usar el comando `git lfs install`)
 
 ### Instalación
 
