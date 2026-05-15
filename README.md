@@ -1,4 +1,4 @@
-# 🎸 Instrument Detector
+# Instrument Detector
 
 ## Autores
 
@@ -169,6 +169,7 @@ Ejemplos de detección correcta:
 
 ### Modelo Random Forest — IRMAS
 
+```
 === RESULTADOS EN TEST SET ===
               precision    recall  f1-score   support
 
@@ -187,6 +188,7 @@ Ejemplos de detección correcta:
     accuracy                           0.62      1341
    macro avg       0.63      0.62      0.62      1341
 weighted avg       0.63      0.62      0.62      1341
+```
 
 ![Matriz de Confusión](metrics/confusion_matrix.png)
 
